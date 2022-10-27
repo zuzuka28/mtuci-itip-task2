@@ -64,7 +64,7 @@ public class Main {
 
     public static int differenceMaxMin(int[] mas) {
         // преобразуем массив в stream, который поддерживает математические операции
-        return Arrays.stream(mas).max().getAsInt();
+        return Arrays.stream(mas).max().getAsInt() - Arrays.stream(mas).min().getAsInt();
     }
 
     public static boolean isAvgWhole(int[] mas) {
